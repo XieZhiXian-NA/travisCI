@@ -23,7 +23,7 @@
   },
   "lint-staged":{
       "*.{ts | js}":[
-        "npm run format && npm run lint && npm run test:nowatch"
+        "format","lint","test:nowatch"
       ]
     
   },
