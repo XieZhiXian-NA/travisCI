@@ -17,10 +17,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format && npm run lint && npm run test:nowatch"
+      "pre-commit": "npm run format && npm run lint && npm run test:nowatch",
+      "commit-msg":"commitlint -e $HUSKY_GIT_PARAMS"
     }
   },
   "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
     "@types/jest": "^26.0.4",
     "@typescript-eslint/eslint-plugin": "^3.6.1",
     "@typescript-eslint/parser": "^3.6.1",

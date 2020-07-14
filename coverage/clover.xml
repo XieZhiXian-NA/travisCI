@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1594715171297" clover="3.2.0">
-  <project timestamp="1594715171298" name="All files">
+<coverage generated="1594718369633" clover="3.2.0">
+  <project timestamp="1594718369633" name="All files">
     <metrics statements="17" coveredstatements="17" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="24" coveredelements="24" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
     <file name="index.ts" path="C:\Users\Administrator\Downloads\hire-master\hire-master\foundations-zh\src\index.ts">
       <metrics statements="17" coveredstatements="17" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
