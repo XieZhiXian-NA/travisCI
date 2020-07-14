@@ -17,7 +17,7 @@ export function parseError(err: Error): ErrorMessage {
     let map = {} as M
     const resMap = {} as ErrorMessage
     const stack: M[] = []
-    console.log('shefh')
+    console.log('sefwef')
     for (const s of res as RegExpMatchArray) {
         if (s.startsWith('TypeError:')) resMap.message = s.replace('TypeError:', '').trim()
         const re = s.mtch(r)

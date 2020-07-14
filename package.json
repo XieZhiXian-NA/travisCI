@@ -22,8 +22,8 @@
     }
   },
   "lint-staged":{
-      "src/**/*.{ts}":[
-        "format","lint","test:nowatch"
+      "src/**/*.ts":[
+        "eslint --ext .ts,.js --fix ./src"
       ]
     
   },
