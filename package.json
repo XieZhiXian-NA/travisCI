@@ -22,7 +22,7 @@
     }
   },
   "lint-staged":{
-      "src/**/*.{ts|js}":[
+      "src/**/*.{ts,js}":[
         "format","lint","test:nowatch"
       ]
     
