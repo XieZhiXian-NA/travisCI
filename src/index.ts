@@ -1,7 +1,6 @@
-
 type M = {
-    line: number,
-    colum: number,
+    line: number
+    colum: number
     filename: string
 }
 export interface ErrorMessage {
@@ -12,7 +11,7 @@ export interface ErrorMessage {
 export function parseError(err: Error): ErrorMessage {
     // implement
     const message = err.message
-    const reg = /(.+)\n?/mg
+    const reg = /(.+)\n?/gm
     const res = message.match(reg)
     const r = /(https?:\/\/.*.js):(\d+):(\d+)/
     let map = {} as M
@@ -25,7 +24,7 @@ export function parseError(err: Error): ErrorMessage {
             map = {
                 line: +re[2],
                 colum: +re[3],
-                filename: re[1]
+                filename: re[1],
             }
 
             stack.push(map)

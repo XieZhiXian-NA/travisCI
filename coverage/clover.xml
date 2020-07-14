@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1594704652920" clover="3.2.0">
-  <project timestamp="1594704652920" name="All files">
-    <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="26" coveredelements="26" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
+<coverage generated="1594708189574" clover="3.2.0">
+  <project timestamp="1594708189574" name="All files">
+    <metrics statements="17" coveredstatements="17" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="24" coveredelements="24" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
     <file name="index.ts" path="C:\Users\Administrator\Downloads\hire-master\hire-master\foundations-zh\src\index.ts">
-      <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="21" count="1" type="stmt"/>
-      <line num="23" count="3" type="stmt"/>
-      <line num="24" count="3" type="stmt"/>
-      <line num="25" count="3" type="stmt"/>
-      <line num="26" count="3" type="stmt"/>
-      <line num="27" count="3" type="stmt"/>
-      <line num="28" count="3" type="stmt"/>
-      <line num="29" count="3" type="stmt"/>
-      <line num="30" count="3" type="stmt"/>
-      <line num="31" count="17" type="cond" truecount="2" falsecount="0"/>
-      <line num="32" count="17" type="stmt"/>
-      <line num="33" count="17" type="cond" truecount="2" falsecount="0"/>
-      <line num="34" count="12" type="stmt"/>
-      <line num="39" count="12" type="stmt"/>
-      <line num="41" count="17" type="stmt"/>
-      <line num="43" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="44" count="3" type="stmt"/>
-      <line num="47" count="1" type="stmt"/>
+      <metrics statements="17" coveredstatements="17" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="19" count="2" type="stmt"/>
+      <line num="20" count="2" type="stmt"/>
+      <line num="21" count="11" type="cond" truecount="2" falsecount="0"/>
+      <line num="22" count="11" type="stmt"/>
+      <line num="23" count="11" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="8" type="stmt"/>
+      <line num="30" count="8" type="stmt"/>
+      <line num="32" count="11" type="stmt"/>
+      <line num="34" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="35" count="2" type="stmt"/>
     </file>
   </project>
 </coverage>
