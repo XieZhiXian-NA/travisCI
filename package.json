@@ -1,0 +1,40 @@
+{
+  "name": "@leetcode-hire/foundations-zh",
+  "version": "1.0.0",
+  "description": "Frontend foundation problem for leetcode-cn.com",
+  "main": "lib/index.js",
+  "repository": "https://github.com/LeetCode-OpenSource/hire",
+  "author": "lynweklm@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev ./src/index.ts -p tsconfig.json --no-cache",
+    "build": "shx rm -rf lib && tsc -p tsconfig.json --outDir lib",
+    "test": "jest --config jestconfig.json --coverage",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "husky":{
+    "hooks":{
+      "pre-commit":"npm run format && npm run lint && npm run test"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.4",
+    "@typescript-eslint/eslint-plugin": "^3.6.1",
+    "@typescript-eslint/parser": "^3.6.1",
+    "eslint": "^7.4.0",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "prettier": "^2.0.5",
+    "shx": "^0.3.2",
+    "ts-jest": "^26.1.2",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "@types/node": "^14.0.23",
+    "ts-node-dev": "^1.0.0-pre.51",
+    "tslib": "^1.10.0"
+  }
+}
