@@ -19,6 +19,7 @@ const fixtureStack = `TypeError: Error raised
 describe(`test parseError function`, () => {
     it('fixtureStack', () => {
         const err: Error = new Error(fixtureStack)
+        console.log('jwiejfwif')
         expect(parseError(err)).toMatchObject({
             message: 'Error raised',
             stack: [

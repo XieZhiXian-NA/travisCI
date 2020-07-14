@@ -23,7 +23,9 @@
   },
   "lint-staged":{
       "src/**/*.ts":[
-        "eslint --ext .ts,.js --fix ./src"
+        "prettier --write \"src/**/*.ts\"",
+        "eslint --ext .ts,.js --fix ./src",
+        "jest --config jestconfig.json --coverage"
       ]
     
   },

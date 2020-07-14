@@ -17,10 +17,10 @@ export function parseError(err: Error): ErrorMessage {
     let map = {} as M
     const resMap = {} as ErrorMessage
     const stack: M[] = []
-    console.log('sefwef')
+    console.log('wejfiowfhwio')
     for (const s of res as RegExpMatchArray) {
         if (s.startsWith('TypeError:')) resMap.message = s.replace('TypeError:', '').trim()
-        const re = s.mtch(r)
+        const re = s.match(r)
         if (re) {
             map = {
                 line: +re[2],
