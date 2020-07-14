@@ -8,3 +8,5 @@ env:
   - CI=true
 script:
   - npm run test 
+after_success:
+  - npm run codecov

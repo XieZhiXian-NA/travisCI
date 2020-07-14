@@ -10,18 +10,22 @@
     "start": "ts-node-dev ./src/index.ts -p tsconfig.json --no-cache",
     "build": "shx rm -rf lib && tsc -p tsconfig.json --outDir lib",
     "test": "jest --config jestconfig.json --coverage",
+    "test:nowatch": "cross-env CI=true jest --config jestconfig.json --coverage",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "eslint --ext .ts,.js --fix ./src"
+    "lint": "eslint --ext .ts,.js --fix ./src",
+    "codecov": "codecov"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format && npm run lint && npm run test"
+      "pre-commit": "npm run format && npm run lint && npm run test:nowatch"
     }
   },
   "devDependencies": {
     "@types/jest": "^26.0.4",
     "@typescript-eslint/eslint-plugin": "^3.6.1",
     "@typescript-eslint/parser": "^3.6.1",
+    "codecov": "^3.7.0",
+    "cross-env": "^7.0.2",
     "eslint": "^7.4.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
